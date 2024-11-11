@@ -8,7 +8,7 @@ if (typeof items != "object" && Array.isArray(items)!=true) {
     //console.error("No Parameters given");
 }
 else {
-    let required = reduced(items,(ele,inc)=>ele+inc,0);
+    let required = reduced(items,(ele,inc)=>ele+inc);
     console.log(required);
     
 }

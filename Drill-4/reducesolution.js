@@ -5,7 +5,9 @@ export function reduced(elements, cb, startingValue) {
   // `startingValue` should be the first argument passed to `cb` and the array element should be the second argument.
   // `startingValue` is the starting value.  If `startingValue` is undefined then make `elements[0]` the initial value.
   var ctr=0;
-  if(typeof startingValue=="undefined") {
+  //console.log(typeof startingValue==="undefined");
+  
+  if(typeof startingValue==="undefined") {
     ctr=1;
     startingValue=elements[0];
   }
@@ -16,3 +18,4 @@ export function reduced(elements, cb, startingValue) {
   }
   return startingValue;
 }
+ 
